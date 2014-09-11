@@ -1,0 +1,14 @@
+c:\Git\OnlineShop\OnlineShop.Models\bin\Debug\OnlineShop.Models.dll.config
+c:\Git\OnlineShop\OnlineShop.Models\bin\Debug\OnlineShop.Models.dll
+c:\Git\OnlineShop\OnlineShop.Models\bin\Debug\OnlineShop.Models.pdb
+c:\Git\OnlineShop\OnlineShop.Models\bin\Debug\EntityFramework.dll
+c:\Git\OnlineShop\OnlineShop.Models\bin\Debug\EntityFramework.SqlServer.dll
+c:\Git\OnlineShop\OnlineShop.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+c:\Git\OnlineShop\OnlineShop.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\Git\OnlineShop\OnlineShop.Models\bin\Debug\EntityFramework.xml
+c:\Git\OnlineShop\OnlineShop.Models\bin\Debug\EntityFramework.SqlServer.xml
+c:\Git\OnlineShop\OnlineShop.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+c:\Git\OnlineShop\OnlineShop.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\Git\OnlineShop\OnlineShop.Models\obj\Debug\OnlineShop.Models.csprojResolveAssemblyReference.cache
+c:\Git\OnlineShop\OnlineShop.Models\obj\Debug\OnlineShop.Models.dll
+c:\Git\OnlineShop\OnlineShop.Models\obj\Debug\OnlineShop.Models.pdb

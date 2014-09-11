@@ -1,0 +1,33 @@
+﻿@model IEnumerable<OnlineShop.Web.Models.DefaultCellPhoneViewModel>
+
+@{
+    ViewBag.Title = "ViewList";
+}
+<h2>ViewList!!</h2>
+
+@using (Ajax.BeginForm("SubView", new AjaxOptions {
+        HttpMethod = "Post",
+        UpdateTargetId = "results",
+        InsertionMode = InsertionMode.Replace,
+        OnFailure = "commentPostFailure"
+    }
+    ))
+{
+    @Html.AntiForgeryToken()
+    <h1>Search by model</h1>
+    <input type="text" name="query" placeholder="Search brand..."/>
+    <input type="submit" value="search" />
+}
+
+<div class="row" id="results">
+    @Html.Partial("_ViewModel", Model)
+</div>
+
+@section scripts{
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script>
+        function commentPostFailure() {
+            alert("Error happened!");
+        }
+    </script>
+}

@@ -1,0 +1,20 @@
+﻿@model IEnumerable<OnlineShop.Web.Models.DefaultCellPhoneViewModel>
+
+<div>
+    @foreach (var cellphone in Model)
+    {
+        <div class="row">
+            <div class="col-md-4">
+                <h2>PartialView</h2>
+                <img src="@cellphone.ImageUrl" alt="@cellphone.Manufacturer" />
+            </div>
+            <div class="col-md-4">
+                <p>@cellphone.Manufacturer @cellphone.Model</p>
+            </div>
+            <div class="col-md-4">
+                <p><a class="btn btn-default" href="@Url.Action("Details", "cellphone", new { cellphone.Id})">@cellphone.Price NOK</a></p>
+            </div>
+        </div>
+    }
+</div>
+

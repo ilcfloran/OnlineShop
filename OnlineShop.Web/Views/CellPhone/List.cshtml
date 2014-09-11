@@ -1,0 +1,28 @@
+﻿@model IEnumerable<OnlineShop.Web.Models.DefaultCellPhoneViewModel>
+
+@{
+    ViewBag.Title = "CellPhones";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@foreach (var cellphone in Model)
+{
+    <div class="row">
+        <div class="col-md-4">
+            <img src="@cellphone.ImageUrl" alt="@cellphone.Manufacturer" />
+        </div>
+        <div class="col-md-4">
+            <p>@cellphone.Manufacturer @cellphone.Model</p>
+        </div>
+        <div class="col-md-4">
+            <p><a class="btn btn-default" href="@Url.Action("Details", "cellphone", new { cellphone.Id})">@cellphone.Price NOK</a></p>
+        </div>
+    </div>
+    
+}
+
+@for (int i = 1; i <= ViewBag.pages; i++)
+{
+    <a href="@Url.Action("List", new { id = i })">@i</a>
+}
